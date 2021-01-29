@@ -1,0 +1,24 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.dynamic.configDto.DataSourceDTO",
+      "name": "multiple",
+      "type": "com.dynamic.configDto.DataSourceDTO"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.dynamic.configDto.DataSourceDTO",
+      "name": "multiple.data-source",
+      "description": "接收所有数据源属性值",
+      "type": "java.util.Map<java.lang.String,com.dynamic.configDto.DataSourcePropertiesDTO>"
+    },
+    {
+      "sourceType": "com.dynamic.configDto.DataSourceDTO",
+      "name": "multiple.default-data-source",
+      "description": "默认数据源",
+      "type": "java.lang.String"
+    }
+  ]
+}

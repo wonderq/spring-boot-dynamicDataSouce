@@ -1,0 +1,37 @@
+multiple:
+  defaultDataSource: other
+  datasource:
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      password: root
+      url: jdbc:mysql://localhost:3306/db_master?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true
+      username: root
+    other:
+      driver-class-name: com.mysql.jdbc.Driver
+      password: root
+      url: jdbc:mysql://localhost:3306/db_other?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true
+      username: root
+    slave1:
+      driver-class-name: com.mysql.jdbc.Driver
+      password: root
+      url: jdbc:mysql://localhost:3306/db_slave1?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true
+      username: root
+    slave2:
+      driver-class-name: com.mysql.jdbc.Driver
+      password: root
+      url: jdbc:mysql://localhost:3306/db_slave2?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true
+      username: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8088
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/db_master?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true
+    username: root
+logging:
+  level:
+    com:
+      dynamic:
+        dao: debug
